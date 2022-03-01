@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1645798823 "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.tex" "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.pdf" "formulaSheet" 1645798824
-  "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.aux" 1645798824 4631 edcf78eba0308b0733d289a6be5870a4 ""
-  "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.tex" 1645798823 7948 0ad1a4e69e2234847eee9d12eb392d29 ""
+["pdflatex"] 1646152333 "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.tex" "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.pdf" "formulaSheet" 1646152335
+  "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.aux" 1646152333 6467 153c4594b24ed0aca88a2c350c5d2bee ""
+  "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.tex" 1646152333 11166 b0248cd4b95dd65f16b9eb8dd652115f ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -54,13 +54,13 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1616695603 5169178 a2ce6e2d73f603b690db6777d06dbccb ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1644926182 2724739 64cab855101ac48e113bcebb24bb5960 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "formulaSheet.aux" 1645798824 4631 edcf78eba0308b0733d289a6be5870a4 "pdflatex"
-  "formulaSheet.tex" 1645798823 7948 0ad1a4e69e2234847eee9d12eb392d29 ""
-  "formulaSheet.toc" 1645798824 2955 2930a75b654643bc77ab9c3314c06926 "pdflatex"
+  "formulaSheet.aux" 1646152333 6467 153c4594b24ed0aca88a2c350c5d2bee "pdflatex"
+  "formulaSheet.tex" 1646152333 11166 b0248cd4b95dd65f16b9eb8dd652115f ""
+  "formulaSheet.toc" 1646152333 4135 b313a94cd4a88e09337c0a8d85c00a1b "pdflatex"
   (generated)
-  "formulaSheet.log"
   "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.log"
-  "formulaSheet.pdf"
   "/Users/ethanhofton/Documents/University/ECM1416 - Computational Mathamatics/Formula Sheet/formulaSheet.pdf"
-  "formulaSheet.aux"
   "formulaSheet.toc"
+  "formulaSheet.log"
+  "formulaSheet.pdf"
+  "formulaSheet.aux"

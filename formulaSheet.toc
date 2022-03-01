@@ -2,39 +2,55 @@
 \contentsline {subsection}{\numberline {1.1}Vectors}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.1}Vector Norm}{2}{}%
 \contentsline {subsubsection}{\numberline {1.1.2}Inner Product}{2}{}%
-\contentsline {subsubsection}{\numberline {1.1.3}Rotating Vector}{2}{}%
-\contentsline {subsection}{\numberline {1.2}Matracies}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.1}Matrix Product ($ A=(m \times n), B=(n \times p) $)}{2}{}%
-\contentsline {subsubsection}{\numberline {1.2.2}Rotation Matrix}{2}{}%
+\contentsline {subsubsection}{\numberline {1.1.3}Rotating Vector}{3}{}%
+\contentsline {subsection}{\numberline {1.2}Matracies}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.1}Matrix Product ($ A=(m \times n), B=(n \times p) $)}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.2}Rotation Matrix}{3}{}%
 \contentsline {subsubsection}{\numberline {1.2.3}Scale Matrix}{3}{}%
 \contentsline {subsubsection}{\numberline {1.2.4}Shear Matrix}{3}{}%
 \contentsline {subsubsection}{\numberline {1.2.5}Transpose Properties}{3}{}%
 \contentsline {subsubsection}{\numberline {1.2.6}Identity Matrix}{3}{}%
 \contentsline {subsubsection}{\numberline {1.2.7}Determinant of a $2 \times 2$ Matrix}{3}{}%
 \contentsline {subsubsection}{\numberline {1.2.8}Determinant of a $n \times n$ Matrix}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.9}Inverse of a $2 \times 2$ Matrix}{3}{}%
-\contentsline {subsubsection}{\numberline {1.2.10}Inverse of a $n \times n$ Matrix}{3}{}%
+\contentsline {subsubsection}{\numberline {1.2.9}Inverse of a $2 \times 2$ Matrix}{4}{}%
+\contentsline {subsubsection}{\numberline {1.2.10}Inverse of a $n \times n$ Matrix}{4}{}%
 \contentsline {subsubsection}{\numberline {1.2.11}Properties of an Inverse}{4}{}%
 \contentsline {subsubsection}{\numberline {1.2.12}Solving a System of Linear Equations}{4}{}%
 \contentsline {section}{\numberline {2}Differentation}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Matrix Calculus}{4}{}%
 \contentsline {subsubsection}{\numberline {2.1.1}Gradient}{4}{}%
 \contentsline {subsubsection}{\numberline {2.1.2}Hessian}{4}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Jacobian}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Taylor Expantion}{4}{}%
+\contentsline {subsubsection}{\numberline {2.1.3}Jacobian}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Taylor Expantion}{5}{}%
 \contentsline {subsection}{\numberline {2.3}Maclorian Expantion (a = 0)}{5}{}%
 \contentsline {subsubsection}{\numberline {2.3.1}$\qopname \relax o{sin}(x)$}{5}{}%
 \contentsline {subsubsection}{\numberline {2.3.2}$\qopname \relax o{cos}(x)$}{5}{}%
 \contentsline {subsubsection}{\numberline {2.3.3}$e^x$}{5}{}%
 \contentsline {subsubsection}{\numberline {2.3.4}$\qopname \relax o{ln}|1+x|$}{5}{}%
 \contentsline {subsubsection}{\numberline {2.3.5}$c(\frac {1} {1-x})$}{5}{}%
-\contentsline {subsection}{\numberline {2.4}Solving ODEs}{5}{}%
-\contentsline {subsubsection}{\numberline {2.4.1}Intergrating Factor}{5}{}%
+\contentsline {subsection}{\numberline {2.4}Solving ODEs}{6}{}%
+\contentsline {subsubsection}{\numberline {2.4.1}Intergrating Factor}{6}{}%
 \contentsline {subsubsection}{\numberline {2.4.2}Seperation of Variables}{6}{}%
 \contentsline {subsubsection}{\numberline {2.4.3}Eulers Method}{6}{}%
 \contentsline {section}{\numberline {3}Probability}{6}{}%
-\contentsline {subsubsection}{\numberline {3.0.1}Given That}{6}{}%
-\contentsline {subsubsection}{\numberline {3.0.2}Independence}{6}{}%
-\contentsline {subsubsection}{\numberline {3.0.3}Law of Total Probability}{6}{}%
-\contentsline {subsubsection}{\numberline {3.0.4}Bayes Theorm}{6}{}%
-\contentsline {section}{\numberline {4}Markov Chains}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Conditional Probability}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.1}Given That}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.2}Independence}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.3}Law of Total Probability}{6}{}%
+\contentsline {subsubsection}{\numberline {3.1.4}Bayes Theorm}{7}{}%
+\contentsline {subsection}{\numberline {3.2}Random Variables}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.1}Descrete Random Variables}{7}{}%
+\contentsline {subsubsection}{\numberline {3.2.2}Continus Random Variables}{7}{}%
+\contentsline {subsection}{\numberline {3.3}Cumulative Distrubution Function}{7}{}%
+\contentsline {subsubsection}{\numberline {3.3.1}General Case}{7}{}%
+\contentsline {subsubsection}{\numberline {3.3.2}X is Discrete}{7}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}X is Continus}{7}{}%
+\contentsline {subsubsection}{\numberline {3.3.4}Properties of CDF}{8}{}%
+\contentsline {subsection}{\numberline {3.4}Mean, expectation}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.1}First Moment of X}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.2}$n$th Moment of X}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.3}Properties of Expectation}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.4}Variance}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.5}Standard Deviation}{8}{}%
+\contentsline {subsubsection}{\numberline {3.4.6}Covariance}{8}{}%
+\contentsline {section}{\numberline {4}Markov Chains}{9}{}%

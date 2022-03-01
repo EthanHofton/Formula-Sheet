@@ -3,6 +3,9 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 
+\DeclareMathOperator{\Var}{\textrm{Var}}
+\DeclareMathOperator{\Cov}{\textrm{Cov}}
+
 \title{ECM1416 Forumlas}
 \author{Ethan Hofton}
 \date{\today}
@@ -22,12 +25,10 @@
         \end{equation}
 
         \subsubsection{Inner Product}
-        \begin{equation}
-            u \cdot v = |u||v|\cos(\theta)
-        \end{equation}
-        \begin{equation}
+        \begin{gather}
+            u \cdot v = |u||v|\cos(\theta) \\
             u \cdot v = u^T \cdot v = \sum^{n}_{i=1}{u_iv_i}
-        \end{equation}
+        \end{gather}
 
         \subsubsection{Rotating Vector}
         \begin{equation}
@@ -91,15 +92,15 @@
 
         \subsubsection {Inverse of a $n \times n$ Matrix}
         \begin{equation}
+            \begin{split}
             A^-1 = \frac 1 {\det(A)} C^T = \frac 1 {\det(A)} \begin{bmatrix} 
                 C_{11} & C_{21} & \cdots & C_{n1} \\ 
                 C_{21} & C_{22} & \cdots & C_{n2} \\
                 \vdots & \vdots & \ddots & \vdots \\
                 C_{1n} & C_{2n} & \cdots & C_{nn} \\
-            \end{bmatrix}
-        \end{equation}
-        \begin{equation}
+            \end{bmatrix} \\
             C_{ij} = (-1)^{i+j}M_{ij}
+        \end{split}
         \end{equation}
 
         \subsubsection {Properties of an Inverse}
@@ -200,28 +201,36 @@
         \subsection{Solving ODEs}
 
         \subsubsection{Intergrating Factor}
-        \begin{gather}
+        \begin{equation}
+        \begin{split}
             \frac {dy} {dx} + P(x)y = Q(x) \\
             \textrm{I.F} = e^{\int P(x) dx} \\
             \frac d {dx} (e^{\int P(x) dx}y) = Q(x)e^{\int P(x) dx} \\
             y = \frac {\int Q(x)e^{\int P(x) dx}dx} {e^{\int P(x) dx}}
-        \end{gather}
+        \end{split}
+        \end{equation}
 
         \subsubsection{Seperation of Variables}
-        \begin{gather}
+        \begin{equation}
+        \begin{split}
             \frac {dy} {dx} = g(x)h(y) \\
             \frac {dy} {dx} \frac 1 {h(y)} = g(x) \\
             \int \frac 1 {h(y)} dy = \int g(x) dx
-        \end{gather}
+        \end{split}
+        \end{equation}
 
         \subsubsection{Eulers Method}
-        \begin{gather}
+        \begin{equation}
+            \begin{split}
             y_{n+1} = y_n + hf(x_n, y+n) \\
             x_{n+1} = x_n + h
-        \end{gather}
+        \end{split}
+        \end{equation}
         
 
     \section{Probability}
+
+    \subsection{Conditional Probability}
 
     \subsubsection{Given That}
     \begin{equation}
@@ -239,9 +248,113 @@
     \end{equation}
 
     \subsubsection{Bayes Theorm}
+    \begin{gather}
+        P(A | B) = \frac {P(B | A)P(A)} { P(B) } \\
+        P(A | X) = \frac {P(X |A )P(A)} { P(X) } = \frac {P(X |A )P(A)} { P(X | A)P(A) + P(X | A^C)P(A^C) }
+    \end{gather}
+
+    \subsection{Random Variables}
+
+    \subsubsection{Descrete Random Variables}
     \begin{equation}
-        P(A | B) = \frac {P(B | A)P(A)} { P(B) }
+    \begin{split}
+        P(x_i) = P(X = x_i) \\
+        P(X=x_i) \geq 0, \forall i \\
+        \sum P(X=x_i) = 1
+    \end{split}
     \end{equation}
+
+    \subsubsection{Continus Random Variables}
+    \begin{equation}
+    \begin{split}
+        P(a \leq X \leq b) = \int_a^b {f(x)dx} \\
+        f(x) \geq 0 , \forall x \in X \\
+        \int_{\Omega} f(x) dx = 1 \\
+        f(x) = 0, x \notin X
+    \end{split}
+    \end{equation}
+    \begin{equation}
+    \begin{split}
+        P(a \leq X \leq b) = P(a < X \leq b) \\
+        = P(a \leq X < b) \\
+        = P(a < X < b)
+    \end{split}
+    \end{equation}
+
+
+    \subsection{Cumulative Distrubution Function}
+    \subsubsection{General Case}
+    \begin{equation}
+        F(x) = P(X \leq x)
+    \end{equation}
+
+    \subsubsection{X is Discrete}
+    \begin{equation}
+        F(x) = P(X \leq x) = \sum_{\forall x_i \leq x} P(x_i)
+    \end{equation}
+
+    \subsubsection{X is Continus}
+    \begin{gather}
+        F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) dt \\
+        P(a \leq X \leq b) = F(b) - F(a)
+    \end{gather}
+
+    \subsubsection{Properties of CDF}
+    \begin{gather}
+        0 \leq F(x) \leq 1 \\
+        x < y \rightarrow F(x) \leq F(y) \\
+        \lim_{x \to \infty} F(x) = 1 \\
+        \lim_{x \to -\infty} F(x) = 0
+    \end{gather}
+
+    \subsection{Mean, expectation}
+
+    \subsubsection{First Moment of X}
+    \begin{equation}
+        \mu = E[x] = \left.
+            \begin{cases}
+                \sum^n_{i=1}x_iP(X=x_i) & \textrm{Discrete R.V} \\
+                \int_{-\infty}^{\infty}xf(x)dx & \textrm{Continus R.V}
+            \end{cases}
+        \right.
+    \end{equation}
+
+    \subsubsection{$n$th Moment of X}
+    \begin{equation}
+        E[x^n] = \left.
+            \begin{cases}
+                \sum^N_{i=1}x_i^nP(X=x_i) & \textrm{Discrete R.V} \\
+                \int_{-\infty}^{\infty}x^nf(x)dx & \textrm{Continus R.V}
+            \end{cases}
+        \right.
+    \end{equation}
+
+    \subsubsection{Properties of Expectation}
+    \begin{gather}
+        x \geq 0 \iff E[x] \geq 0 \\
+        E[cx] = cE[x] \\
+        E[x+y] = E[x] + E[y]
+    \end{gather}
+
+    \subsubsection{Variance}
+    \begin{gather}
+        \Var(x) = \sigma^2 = E[x^2] - (E[x])^2
+    \end{gather}
+
+    \subsubsection{Standard Deviation}
+    \begin{gather}
+        \sigma = \sqrt{\Var(x)} \\
+        \Var(xC) = c^2\Var(x) \\
+        \Var(x+y) = \Var(x) + \Var(y) \qquad \textrm{if } x,y \ \textrm{are indepedent} \\
+        \Var(x+y) = \Var(x) + \Var(y) + 2\Cov(x, y) \qquad \textrm{if } x,y \ \textrm{are dependant} \\
+    \end{gather}
+
+    \subsubsection{Covariance}
+    \begin{gather}
+        \Cov(x,y) = E[xy] - E[x]E[y] \\
+        \Cov(x,x) = E[x^2] - (E[x])^2 = \Var(x) \\
+        \Cov(x,y) = 0 \qquad x,y \ \textrm{are indepedent}
+    \end{gather}
 
     \section{Markov Chains}
 
